@@ -17,7 +17,7 @@
 
 <b>Material Design Template</b>
 
-1. Material Design Lite - for more details visit http://www.getmdl.io/index.html
+1. Material Design Lite - for more details visit http://www.getmdl.io/templates/blog/index.html
 
 <b>Training project</b>
 
