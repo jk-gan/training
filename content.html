@@ -10,26 +10,88 @@
             body{
                 background-image: url("./Image/Content/bg.jpg");
                 background-size: cover;
+                background-attachment: fixed;
             }
 
             .material-icons.md-light {
                 color: rgba(255, 255, 255, 1);
             }
 
+            .mdl-mini-footer.md-light {
+                background-color: rgba(255, 255, 255, 1);
+            }
+
+            .mdl-mini-footer.content-footer {
+                height: 50px;
+            }
+
             .back_button{
                 padding-top: 5px;
                 padding-left: 7px;
             }
+
+            .twitter-btn{
+                background-image: url("./Image/Content/post_twitter_black_24dp.png");
+            }
+
+            .fb-btn{
+                background-image: url("./Image/Content/post_facebook_black_24dp.png");
+            }
+
+            .gp-btn{
+                background-image: url("./Image/Content/post_gplus_black_24dp.png");
+            }
+
+            .social-btn{
+                  background-position: center;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-color: transparent;
+                  margin: 0 16px;
+                  width: 24px;
+                  height: 24px;
+                  cursor: pointer;
+                  opacity: 0.46;
+                  border-radius: 2px;
+            }
         </style>
     </head>
 
-    <body>
+    <body onresize="resize()">
         <div class='container'>
             <div class="mdl-cell mdl-cell--1-col back_button">
                 <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="./index.html">
                     <i class="material-icons md-light">arrow_back</i>
                 </a>
             </div>
+            <div class="content_container">
+
+            </div>
+            <footer class="mdl-mini-footer md-light content-footer">
+              <div class="mdl-mini-footer--left-section">
+                  <button class="mdl-mini-footer--social-btn social-btn twitter-btn"></button>
+                  <button class="mdl-mini-footer--social-btn social-btn fb-btn"></button>
+                  <button class="mdl-mini-footer--social-btn social-btn gp-btn"></button>
+              </div>
+            </footer>
         </div>
     </body>
 </html>
+
+<script>
+    function setContentHeight(){
+        var container = document.getElementsByClassName("content_container")[0]
+
+        container.style.minHeight = (window.innerHeight - 157) + "px"
+    }
+
+    function resize(){
+        var container = document.getElementsByClassName("content_container")[0]
+
+        container.style.minHeight = (window.innerHeight - 157) + "px"
+    }
+
+    window.onload = function (){
+        setContentHeight()
+    }
+</script>
