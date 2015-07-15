@@ -5,19 +5,30 @@
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
             body{
                 background-image: url("./Image/Content/bg.jpg");
                 background-size: cover;
+            }
+
+            .material-icons.md-light {
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .back_button{
+                padding-top: 5px;
+                padding-left: 7px;
             }
         </style>
     </head>
 
     <body>
         <div class='container'>
-            <div class="mdl-cell mdl-cell--1-col">
-
+            <div class="mdl-cell mdl-cell--1-col back_button">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="./index.html">
+                    <i class="material-icons md-light">arrow_back</i>
+                </a>
             </div>
         </div>
     </body>
