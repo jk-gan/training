@@ -14,6 +14,7 @@
 
 1. Trello
 2. Slack
+3. Github
 
 ###Material Design Template
 
@@ -25,7 +26,7 @@
 
 ###Contribute
 
-- ```git clone git@github.com:jk-gan/training.git``` into your directory
+- Clone the repo ```git clone git@github.com:jk-gan/training.git``` into your directory
 - ```git checkout -branch *your_branch_name*```
 - Commit your work to your own branch ```git push origin *your_branch_name*```
 - Make sure to check if there are any changes from remote master, and rebase your branch with the latest master
