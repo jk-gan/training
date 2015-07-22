@@ -11,48 +11,125 @@
                 background-image: url("./Image/Content/bg.jpg");
                 background-size: cover;
                 background-attachment: fixed;
+                font-family: 'Roboto', 'Helvetica', sans-serif;
             }
-
             .material-icons.md-light {
                 color: rgba(255, 255, 255, 1);
             }
-
             .mdl-mini-footer.md-light {
                 background-color: rgba(255, 255, 255, 1);
             }
-
             .mdl-mini-footer.content-footer {
                 height: 50px;
             }
-
             .back_button{
                 padding-top: 5px;
                 padding-left: 7px;
             }
-
+            .comment-btn{
+                background-color: rgba(0, 0, 0, 0.24);
+                margin-top: 20px;
+                margin-left: 10px;
+            }
             .twitter-btn{
                 background-image: url("./Image/Content/post_twitter_black_24dp.png");
             }
-
             .fb-btn{
                 background-image: url("./Image/Content/post_facebook_black_24dp.png");
             }
-
             .gp-btn{
                 background-image: url("./Image/Content/post_gplus_black_24dp.png");
             }
-
             .social-btn{
-                  background-position: center;
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  background-color: transparent;
-                  margin: 0 16px;
-                  width: 24px;
-                  height: 24px;
-                  cursor: pointer;
-                  opacity: 0.46;
-                  border-radius: 2px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                margin: 0 16px;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                opacity: 0.46;
+                border-radius: 2px;
+            }
+            .content_container{
+                padding-top: 100px;
+            }
+            .content_card{
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .nav_container{
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 130px;
+                margin-top: 10px;
+                text-decoration: none;
+                color: white;
+            }
+            .mdl-card__media{
+                background-image: url("./Image/Content/road_big.jpg");
+                height: 280px;
+            }
+            .minilogo{
+                width: 44px;
+                height: 44px;
+                margin-right: 20px;
+                border-radius: 22px;
+                background-image: url("./Image/Content/avatar.png");
+                background-size: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: #F5F5F5;
+            }
+            .comment_container{
+                background-color: #EEE;
+            }
+            .comment_text{
+                float: left;
+                width: 90%;
+            }
+            .mdl-card__supporting-text{
+                width: auto;
+            }
+            .logo_container div{
+                float: left;
+            }
+            .meta_container{
+                float:right;
+            }
+            .mdl-card__media h3{
+                margin-top: 230px;
+                margin-left: 30px;
+            }
+            .mdl-card__supporting-text p{
+                max-width: 512px;
+                margin: 16px auto;
+                font-size: 16px;
+                line-height: 28px;
+            }
+            .meta_container div{
+                display: inline-block;
+            }
+            .nav_container a{
+                text-decoration: none;
+                color: white;
+            }
+            @media screen and (max-width: 900px){
+                .content_card{
+                    width: auto;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+                .nav_container{
+                    width: auto;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    margin-bottom: 130px;
+                    margin-top: 10px;
+                }
             }
         </style>
     </head>
@@ -64,9 +141,87 @@
                     <i class="material-icons md-light">arrow_back</i>
                 </a>
             </div>
-            <div class="content_container">
 
+            <div class="content_container">
+                <div class="mdl-card mdl-shadow--2dp content_card">
+                    <div class="mdl-card__media mdl-color-text--grey-50">
+                        <h3>On the road again</h3>
+                    </div>
+
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+                        <div class="logo_container">
+                            <div class="minilogo">
+                            </div>
+
+                            <div>
+                                The Newist
+                                <br>
+                                2 days ago
+                            </div>
+                        </div>
+
+
+                        <div class="meta_container">
+                            <div class="meta__favorites">
+                                425
+                                <i class="material-icons">favorite</i>
+                            </div>
+
+                            <div>
+                                <i class="material-icons">bookmark</i>
+                            </div>
+
+                            <div>
+                                <i class="material-icons">share</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim mauris, sagittis vitae ultrices vitae, efficitur sed tellus. Ut vitae turpis ac quam ultrices ornare vitae quis nisl. Donec porta mauris ut euismod ullamcorper. Pellentesque vitae euismod dolor, vitae bibendum ex. Donec dui odio, faucibus non nisi a, pellentesque pulvinar elit. Donec finibus lacus non tortor viverra cursus. Donec sed massa augue. Duis condimentum in erat id tristique. Nunc imperdiet porttitor gravida. Praesent vitae libero vel nulla consequat condimentum ac quis nunc. Integer vel elementum quam. Sed sed efficitur lorem. Morbi at accumsan ligula, sed iaculis augue.</p>
+
+                        <p>Aenean sed venenatis nisi, feugiat ornare quam. Proin nec finibus leo, quis facilisis nisi. Suspendisse justo libero, luctus eget elementum vitae, imperdiet non lorem. Sed vel aliquam risus, ac pretium magna. In pellentesque, libero tristique tempus pretium, ex libero porttitor velit, vitae luctus nisi diam sed sapien. Quisque ac augue ante. Aliquam urna dui, scelerisque ut turpis vitae, maximus lacinia dui. Fusce ut ultrices lorem. Aliquam vel facilisis ligula. Nullam quis velit aliquam, luctus orci sed, cursus nulla. Sed fringilla nisi porttitor dapibus consectetur. Praesent tempus suscipit enim, ut aliquet nibh tempor et. Sed varius faucibus mollis. Aliquam tincidunt hendrerit arcu nec porttitor. Duis non quam eu velit convallis faucibus eu ut lacus. Sed eu tincidunt nisi.</p>
+
+                        <p>Suspendisse finibus molestie nisi vitae rutrum. Nam lorem nisi, sagittis sed eleifend non, sollicitudin id sem. Curabitur porta lacus et sem mollis rutrum nec vel tortor. Sed mattis elit a nulla mattis condimentum. Phasellus eget magna massa. Suspendisse est leo, eleifend in euismod nec, rutrum vitae neque. Ut quis congue purus. Vestibulum eu congue mauris. Mauris tincidunt eros in nisi rhoncus, vitae aliquam sem sollicitudin. Integer vulputate massa massa, quis efficitur neque consectetur eget. Donec sed lacinia est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas iaculis blandit varius. Nam laoreet arcu id suscipit luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer cursus, magna non gravida pellentesque, magna erat pharetra magna, quis feugiat magna turpis vel sapien.</p>
+
+                        <p>Suspendisse potenti. Aliquam vitae nulla in eros vulputate viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis pharetra pretium. Donec congue non ipsum non gravida. Praesent non odio lorem. Cras non gravida est, quis eleifend nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec dictum semper lectus et pellentesque. Curabitur ligula diam, finibus vel orci id, faucibus auctor dui. Cras aliquet convallis ligula, id fringilla orci posuere vel.</p>
+
+                        <p>Nullam posuere, nunc non feugiat consectetur, est dolor feugiat lorem, vitae venenatis lectus purus eget sapien. Morbi pharetra facilisis augue quis vulputate. Sed nec massa lacus. Donec pulvinar mi vitae mi placerat vehicula. Curabitur id magna efficitur, aliquet nisi eu, maximus quam. Etiam lacus enim, facilisis sed ultrices non, efficitur eu ipsum. Vestibulum convallis erat urna, finibus efficitur enim dignissim ac. Praesent sodales tortor ut mattis finibus. Donec pretium scelerisque mi ac tempus. In hac habitasse platea dictumst. Nulla nec tristique augue, eget luctus nisi. Etiam rutrum augue et risus pharetra varius. Morbi sodales velit mi, at semper felis semper non. Sed ut pretium risus, ac sollicitudin eros.</p>
+                    </div>
+                    <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comment_container">
+                        <form>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label comment_text">
+                                <textarea rows="1" class="mdl-textfield__input" id="comment"></textarea>
+                                <label for="comment" class="mdl-textfield__label">Join the discussion</label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon comment-btn">
+                                <i class="material-icons">check</i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
+
+            <div class="nav_container">
+                <a href="./index.html">
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+
+                    Newer
+
+                </a>
+
+                <a href="./index.html" style="float: right;">
+
+                    Older
+
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900">
+                        <i class="material-icons">arrow_forward</i>
+                    </button>
+                </a>
+            </div>
+
             <footer class="mdl-mini-footer md-light content-footer">
               <div class="mdl-mini-footer--left-section">
                   <button class="mdl-mini-footer--social-btn social-btn twitter-btn"></button>
@@ -81,17 +236,15 @@
 <script>
     function setContentHeight(){
         var container = document.getElementsByClassName("content_container")[0]
-
         container.style.minHeight = (window.innerHeight - 157) + "px"
     }
-
     function resize(){
         var container = document.getElementsByClassName("content_container")[0]
-
         container.style.minHeight = (window.innerHeight - 157) + "px"
     }
-
     window.onload = function (){
         setContentHeight()
     }
 </script>
+Status API Training Shop Blog About Help
+© 2015 GitHub, Inc. Terms Privacy Security Contact
